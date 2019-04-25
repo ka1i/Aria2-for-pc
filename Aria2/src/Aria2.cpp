@@ -1,14 +1,16 @@
 /*
 * @Author: mardan
 * @Date:   2019-04-24 12:24:23
-* @Last Modified by:   mardan
-* @Last Modified time: 2019-04-25 14:19:56
+* @Last Modified by:   Serendipity
+* @Last Modified time: 2019-04-25 15:26:37
 */
 
 
 #include <chrono>
 #include <Aria2.h>
 #include <iostream>
+#include <QGuiApplication>
+#include <QQmlApplicationEngine>
 
 
 int downloadEventCallback(aria2::Session* session, aria2::DownloadEvent event,
@@ -47,6 +49,7 @@ int downloadEventCallback(aria2::Session* session, aria2::DownloadEvent event,
 
 int main(int argc, char** argv)
 {
+
   int rv;
   if (argc < 2) {
     std::cerr << "Usage: Aria2.app URI [URI...]\n"

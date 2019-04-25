@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(Aria.app LANGUAGES CXX)
+project(Aria2.app LANGUAGES CXX)
+
+set(Qt5_DIR "/home/mardan/application/Qt5.12.2/5.12.2/gcc_64/lib/cmake/Qt5")
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
@@ -14,11 +16,11 @@ add_definitions("-Wl,-rpath,./Aria2/lib")
 
 link_directories(./Aria2/lib)
 include_directories(./Aria2/include)
-#find_package(Qt5 COMPONENTS Core Quick REQUIRED)
+find_package(Qt5 COMPONENTS Core Quick REQUIRED)
 
-add_executable(${PROJECT_NAME} "Aria2/src/Aria2.cpp" "assets.qrc")
+add_executable(${PROJECT_NAME} "Aria2/src/Aria2.cpp")
 
-target_link_libraries(${PROJECT_NAME} PRIVATE aria2)
+target_link_libraries(${PROJECT_NAME} PRIVATE aria2 Qt5::Core Qt5::Quick)
 
 message("PROJECT_NAME: ${PROJECT_NAME}")
 message("BUILD_TYPE: ${CMAKE_BUILD_TYPE}")
