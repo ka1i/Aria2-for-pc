@@ -1,8 +1,9 @@
 /*
-* @Author: Serendipity
-* @Date:   2019-04-25 18:04:36
-* @Last Modified by:   Serendipity
-* @Last Modified time: 2019-04-25 18:06:10
+* @Author: Mardan-M
+* @Date:   2019-04-25 20:32:08
+* @Email:	Mardan_66@outlook.com
+* @Last Modified by:   Mardan-M
+* @Last Modified time: 2019-04-25 20:32:52
 */
 
 #include "mainwindow.h"

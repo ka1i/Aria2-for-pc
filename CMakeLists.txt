@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(Aria2.app LANGUAGES CXX)
+project(fakeThunder LANGUAGES CXX)
 
 set(Qt5_DIR "/home/mardan/application/Qt5.12.2/5.12.2/gcc_64/lib/cmake/Qt5")
 
