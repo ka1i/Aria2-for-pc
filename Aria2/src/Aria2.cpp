@@ -2,15 +2,13 @@
 * @Author: mardan
 * @Date:   2019-04-24 12:24:23
 * @Last Modified by:   Serendipity
-* @Last Modified time: 2019-04-25 15:26:37
+* @Last Modified time: 2019-04-25 15:47:41
 */
 
 
 #include <chrono>
 #include <Aria2.h>
 #include <iostream>
-#include <QGuiApplication>
-#include <QQmlApplicationEngine>
 
 
 int downloadEventCallback(aria2::Session* session, aria2::DownloadEvent event,
