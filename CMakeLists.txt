@@ -15,12 +15,12 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/../bin)
 
 add_definitions("-Wl,-rpath,./Aria2/lib")  
 
-link_directories("./Aria2/lib" "./MaterialUI/lib")
+link_directories("./Aria2/lib" "./UI/lib")
 
-include_directories("./Aria2/include" "./MaterialUI")
+include_directories("./Aria2/include" "./UI")
 find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
 
-add_executable(${PROJECT_NAME} ${ui_FILES} "main.cpp" "MaterialUI/mainwindow.h" "MaterialUI/mainwindow.cpp" "MaterialUI/mainwindow.ui")
+add_executable(${PROJECT_NAME} ${ui_FILES} "main.cpp" "UI/mainwindow.h" "UI/mainwindow.cpp" "UI/mainwindow.ui")
 
 target_link_libraries(${PROJECT_NAME} PRIVATE aria2 Qt5::Core Qt5::Widgets)
 
