@@ -22,7 +22,7 @@ find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
 
 add_executable(${PROJECT_NAME} ${ui_FILES} "main.cpp" "MaterialUI/mainwindow.h" "MaterialUI/mainwindow.cpp" "MaterialUI/mainwindow.ui")
 
-target_link_libraries(${PROJECT_NAME} PRIVATE aria2 components.a Qt5::Core Qt5::Widgets)
+target_link_libraries(${PROJECT_NAME} PRIVATE aria2 Qt5::Core Qt5::Widgets)
 
 message("PROJECT_NAME: ${PROJECT_NAME}")
 message("BUILD_TYPE: ${CMAKE_BUILD_TYPE}")
