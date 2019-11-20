@@ -45,7 +45,7 @@ public:
         label->setFont(font);
         label_1 = new QLabel(centralWidget);
         label_1->setObjectName(QString::fromUtf8("label_1"));
-        label_1->setGeometry(QRect(195, 33, 131, 31));
+        label_1->setGeometry(QRect(205, 33, 131, 31));
         label_2 = new QLabel(centralWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(500, 10, 71, 21));
