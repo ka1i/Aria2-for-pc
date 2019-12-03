@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 
 project(fakeThunder LANGUAGES CXX)
 
-set(Qt5_DIR "/opt/Qt5.13.2/5.13.2/gcc_64/lib/cmake/Qt5")
+#set(Qt5_DIR "/opt/Qt5.13.2/5.13.2/gcc_64/lib/cmake/Qt5")
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
